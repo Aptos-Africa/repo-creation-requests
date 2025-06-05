@@ -1,0 +1,29 @@
+name: Repository Request
+description: Request the creation of a new repository in this organization.
+title: "[New Repo] <your-desired-repo-name>"
+labels: ["repo-request"]
+body:
+  - type: input
+    id: repo_name
+    attributes:
+      label: Repository Name
+      placeholder: e.g., my-awesome-project
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Tell us briefly what this repository is for.
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why do you want this repo?
+      placeholder: Explain the purpose and why it belongs in this organization.
+      required: true
+  - type: input
+    id: github_username
+    attributes:
+      label: Your GitHub username
+      placeholder: e.g., @octocat
+      required: true
